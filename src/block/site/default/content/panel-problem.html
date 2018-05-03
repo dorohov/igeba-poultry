@@ -1,0 +1,41 @@
+<div class="{{content_prefix}}panel  {{content_mod}}"  id="{{content_id}}">
+	<div class="{{content_prefix}}container container  {{content_mod}}">			
+		[[azbntple 
+			tpl="/src/block/site/default/page-header/heading.html" 
+			header_prefix="page-header__" 
+			header_mod="{{block_heading_mod}}  {{content_mod}}"
+			header_level="{{block_heading_level}}"
+			header="{{block_heading}}"
+		]]	
+		<div class="{{content_prefix}}elem  {{content_mod}}">	
+			<div class="{{content_prefix}}row row  is--wrap  is--gutter  {{content_mod}}">
+				<div class="{{content_prefix}}cols cols  is--cols-6  {{content_mod}}">
+					[[azbntple 
+						tpl="/src/block/site/default/card/card-problem.html"
+						block_prefix="card-item__" 
+						block_mod="is--problem"
+						block_preview="icon-hot"
+						block_heading="Горячий туман"
+						block_text="<ul><li>Подавление патогенной микрофлоры и вирусов</li><li>Обработка автотранспорта - дезбарьер</li><li>Инсектицидные обработки наружных поверхностей и прилегающей территории</li></ul>"
+					]]
+				</div> 
+				<div class="{{content_prefix}}cols cols  is--cols-6  {{content_mod}}">
+					[[azbntple 
+						tpl="/src/block/site/default/card/card-problem.html"
+						block_prefix="card-item__" 
+						block_mod="is--problem"
+						block_preview="icon-cold"
+						block_heading="Холодный туман"
+						block_text="<ul><li>Профилактика респираторки</li><li>Дезинфекция внутренних поверхностей</li></ul>"
+					]]
+				</div>
+			</div> 
+		</div>
+	</div>
+	[[azbntple 
+		tpl="/src/block/site/default/bg/card.html"
+		block_prefix="bg-block__" 
+		block_mod="is--egg"
+		block_bg="bg-egg.png"
+	]]
+</div> 

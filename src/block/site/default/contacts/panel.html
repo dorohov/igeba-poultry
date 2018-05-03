@@ -1,0 +1,73 @@
+<div class="{{block_prefix}}block" id="{{block_id}}">
+	<div class="{{block_prefix}}container container  is--nopadding">
+		<div class="{{block_prefix}}inner">
+			[[azbntple 
+				tpl="/src/block/site/default/page-header/heading.html" 
+				header_prefix="page-header__" 
+				header_mod="{{block_heading_mod}}  {{block_mod}}"
+				header_level="{{block_heading_level}}"
+				header="{{block_heading}}"
+			]]	
+			<div class="{{block_prefix}}row row  is--wrap  is--gutter">
+				<div class="{{block_prefix}}cols cols  is--left">
+					<div class="{{block_prefix}}item-group">
+						<div class="{{block_prefix}}item">
+							[[azbntple 
+								tpl="/src/block/site/default/contacts/item-icon-tel.html" 
+								block_prefix="kontakty-item__"
+								block_mod="is--icon  is--tel"
+								block_name="{{contacts.phone}}"
+								block_link="tel:{{contacts.phone_tel}}"
+								block_attr="  "
+								block_icon="contacts-tel"
+							]]			
+						</div>
+						<div class="{{block_prefix}}item">
+							[[azbntple 
+								tpl="/src/block/site/default/contacts/item-icon-link.html" 
+								block_prefix="kontakty-item__"
+								block_mod="is--icon"
+								block_name="{{contacts.email}}"
+								block_link="mailto:{{contacts.email}}"
+								block_attr="  "
+								block_icon="contacts-email"
+							]]			
+						</div>		
+						<div class="{{block_prefix}}item">
+							[[azbntple 
+								tpl="/src/block/site/default/contacts/item-icon.html" 
+								block_prefix="kontakty-item__"
+								block_mod="is--icon"
+								block_name="{{contacts.address}}"
+								block_link="  "
+								block_attr="  "
+								block_icon="contacts-address"
+							]]			
+						</div>
+						<div class="{{block_prefix}}item  is--call">
+							[[azbntple 
+								tpl="/src/block/site/default/button/button-modal.html"
+								button_prefix="btn__" 
+								button_mod="is--lg"
+								button_target="modal-call"
+								button_name="Обратный звонок" 
+							]]
+						</div>
+					</div>				
+				</div>	
+				<div class="{{block_prefix}}cols cols  is--right">
+					[[azbntple 
+						tpl="/src/block/site/default/card/card-gallery.html"
+						block_prefix="card-item__" 
+						block_mod="is--gallery  is--border"
+						block_fancy_data="docs"
+						block_preview_fancy="{{url-path-img}}/temp/contacts-docs.jpg"
+						block_preview="http://via.placeholder.com/170x240"
+					]]
+					
+				</div>	
+			</div>	
+		</div>
+	</div>
+	<div class="{{block_prefix}}map" id="map-google" data-map='{"center" : [55.6215, 37.2712],"zoom" : 17,"placemarks" : [{"coord" : [55.620929, 37.274719], "title" : "Офис"}]}' ></div>
+</div>

@@ -1,0 +1,44 @@
+{
+	"contacts":{
+		"name":"poultry.interclean",
+		"domain":"poultry.interclean.ru",
+		"domain_link":"http://poultry.interclean.ru/",
+		"agreement_page":"agreement",
+		"copyright":"",
+		"email":"igeba@mail.ru",
+		"phone":"+7 (495) 055-17-53",  
+		"phone_tel":"+74950551753",   
+		"clock":"с&nbsp;9 до&nbsp;1:30",  
+		"address":"г.&nbsp;Москва, п.&nbsp;Внуковское, д.&nbsp;Ликова, влад.&nbsp;85"
+	},
+	"soc":{
+		"vk":"https://vk.com/",
+		"fb":"https://www.facebook.com/",
+		"ok":"https://ok.ru/group/",
+		"tw":"https://twitter.com/",
+		"inst":"https://www.instagram.com/"
+	},
+	"page":{
+		"index":"/",
+		"catalog_card":"/catalog-card.html",
+		"agreement":"/agreement.html"
+	},
+	"block":{
+		"body":"block-body",
+		"adv":"block-adv",
+		"header":"block-header",
+		"about":"block-about",
+		"problem":"block-problem",
+		"catalog":"block-catalog",
+		"application":"block-application",
+		"articles":"block-articles",
+		"instructions":"block-instructions",
+		"in":"block-in",
+		"contacts":"block-contacts"
+	},	                           
+	"url-path-css":"/css",
+	"url-path-img":"/img",
+	"url-path-js":"/js",
+	"url-path-plugins":"/plugins",
+	"url-path-favicon":"/favicon"
+}

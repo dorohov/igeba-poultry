@@ -1,0 +1,54 @@
+.bg-block__{
+	&item{
+		@media @media-point-device {display: none;}
+		position: absolute;
+		background-repeat: no-repeat;
+		background-position: center;
+		background-size: contain;
+		z-index: 1;
+		&.is--egg{
+			max-width: 400px;
+			max-height: 400px;
+			width: 21vw;
+			height: 21vw;
+			right: 12vw;
+			top: 5.5vw;
+			transform: translateX(45%);
+		}
+	}
+	&text{
+		display: none;
+		position: absolute;
+		z-index: 1;
+		@media @media-point-screen {display: block;}
+		&.is--catalog{
+			font-family: @b-ff-2;
+			font-weight: 900;
+			.calcFontSize(200, 290, 320, 1680);
+			.calcLineHeight(150, 240, 320, 1680);
+			color: @white;
+			//color: red;
+			letter-spacing: 1.4vw;
+			left: 50%;
+			top: 17%;
+			transform: translateX(-50%);
+		}
+	}
+	&svg{
+		display: none;
+		position: absolute;
+		z-index: 1;
+		@media @media-point-screen {display: block;}
+		&.is--card-hover{
+			max-width: 1343px;
+			max-height: 772px;
+			width: 70vw;
+			height: 41vw;
+			color: fadeout(@b-color-a, 90%);
+			//color: fadeout(red, 90%);
+			top: 3vw;
+			left: 50%;
+			transform: translateX(-50%) rotate(23deg);
+		}
+	}
+}

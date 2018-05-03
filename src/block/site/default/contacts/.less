@@ -1,0 +1,110 @@
+.kontakty-panel__{
+	&block{	
+		position: relative;
+		overflow: hidden;
+	}
+	&inner{
+		margin-bottom: 35px;
+		@media @media-point-screen {
+			margin: 0;
+			position: absolute;
+			z-index: 5;
+			background: @white;
+			//background: red;
+			top: 50%;
+			transform: translateY(-50%);
+			max-width: 755px;
+			min-width: 580px;
+			width: 40vw;
+			padding: 4.2vw 4.2vw 7vw;			
+		}
+		@media @media-point-tablet {
+			//padding: 30px 45px;
+		}
+	}
+	&map{
+		height: 300px;
+		@media @media-point-xs {
+			height: 250px;
+		}
+		@media @media-point-notsmart {
+			height: 725px;
+		}
+		@media @media-point-md1 {
+			height: 500px;
+		}
+	}
+	&row{
+		@media @media-point-tablet {
+			align-items: center;
+		}
+	}
+	&cols{
+		&.is--left{
+			@media @media-point-tablet {
+				.makeCols(5, 12);
+			}
+			@media @media-point-screen {
+				.makeCols(7, 12);
+				padding-right: 30px;
+			}
+		}
+		&.is--right{
+			@media @media-point-screen {
+				.makeCols(5, 12);
+			}
+		}
+	}
+	&item{
+		margin-bottom: 15px;
+		&.is--call{
+			padding-top: 25px;
+		}
+		&:last-child{
+			margin-bottom: 0;
+		}
+	}
+}
+
+.kontakty-item__{
+	&item{
+		position: relative;
+		font-weight: 400;
+		//
+		&, &:hover, &:focus{
+			color: @b-color-h;
+		}
+		span{
+			font-weight: 700;
+			color: @green-dark;
+		}
+		&.is--icon{
+			padding-left: 50px;
+			padding-top: 5px;
+			padding-bottom: 5px;
+		}
+		//font-size: @b-fs;
+	}
+	&link{
+		display: block;
+		a[href^="mailto:"]&,
+		a[href^="tel:"]&,
+		&, &:hover, &:focus{
+			color: @b-color;
+		}
+	}
+	&icon{ 
+		position: absolute;
+		top: 50%; 
+		left: 0;
+		transform: translateY(-50%);
+		transition: @trs-site;
+		width: 36px;
+		height: 36px;
+		border-radius: 50%;
+		color: @white;
+		background-color: @b-color-a;
+		padding: 10px;
+		svg{display: block;}
+	}
+}
