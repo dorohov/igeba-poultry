@@ -23,7 +23,7 @@ function initMap() {
       //iconOfficeOne = '/wp-content/themes/azbn7theme/img/default/map-placeholder.png';
       //iconOfficeOne = '/img/default/location-map.png';
       iconOfficeOne = {   
-        url: "/img/default/location-map.png", 
+        url: "/wp-content/themes/azbn7theme/img/default/location-map.png", 
         anchor: new google.maps.Point(40,85),
       };
       /*iconOfficeOne = {   
